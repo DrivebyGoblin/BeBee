@@ -10,7 +10,6 @@ public class Movement : MonoBehaviour
     private bool _moveRight = false;
     private bool _isFly = false;
 
-
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
@@ -49,12 +48,6 @@ public class Movement : MonoBehaviour
         _isDead = isDead;
     }
 
-
-
-
-
-
-
     public void FlyUp()
     {
         _rigidbody2D.AddForce(Vector2.up * _flySpeed * Time.deltaTime, ForceMode2D.Force);
@@ -83,42 +76,5 @@ public class Movement : MonoBehaviour
         {
             _rigidbody2D.AddForce(Vector2.up * _flySpeed * Time.deltaTime, ForceMode2D.Force);
         }
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-        if (Input.GetKey(KeyCode.D) && !_isDead)
-        {
-            transform.rotation = Quaternion.Euler(0f, 0f, -15f);
-            transform.Translate(Vector2.right * _moveSpeed * Time.deltaTime, Space.Self);
-        }
-        if (Input.GetKey(KeyCode.A) && !_isDead)
-        {
-            transform.rotation = Quaternion.Euler(0f, 0f, 15f);
-            transform.Translate(Vector2.left * _moveSpeed * Time.deltaTime, Space.Self);
-        }
-
-        if (Input.GetMouseButtonDown(0) && !_isDead)
-        {
-            FlyUp();
-
-        }
-        
-
     }
-
-
-    
-
 }
