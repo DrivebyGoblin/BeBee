@@ -570,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 896409833}
     - target: {fileID: 973477655973294603, guid: 14cd64fac211f7e41a94e6276d10d041, type: 3}
       propertyPath: _allFlowers
-      value: 1
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 973477655973294603, guid: 14cd64fac211f7e41a94e6276d10d041, type: 3}
       propertyPath: _flowerCountUI

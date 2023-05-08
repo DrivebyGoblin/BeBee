@@ -27,7 +27,7 @@ public class FallingThorn : MonoBehaviour
 
     private IEnumerator DestroyFallingObject(Rigidbody2D _rb)
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         Destroy(_rb.gameObject);
     }
 

@@ -19,7 +19,6 @@ public class MovingThroun : MonoBehaviour
 
     public void StopThroun()
     {
-        print("salam");
         transform.position = StartPos;
     }
 
